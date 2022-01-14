@@ -1,7 +1,7 @@
 
 # Commands and More
 
-This section will cover 3 things, trying new commands, copying files over, and setting an SSH key.
+This section will cover 2 things, trying new commands, and copying files over.
 
 # A Few Basic Commands
 
@@ -23,3 +23,4 @@ You can do this how you would normally do so, such as running javac file.java th
 
 # Copying Files Over
 
+When connected to the remote server, you may copy files over onto it by using the scp command above. Doing so will allow you to run these commands on the remote server.
