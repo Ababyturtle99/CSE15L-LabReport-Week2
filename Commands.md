@@ -5,7 +5,7 @@ This section will cover 2 things, trying new commands, and copying files over.
 
 # A Few Basic Commands
 
-Feel free to mess around and use these commands yourself to try to get familiar with them!
+Feel free to mess around and use these commands yourself to try to get familiar with them! Notice how they will show different outputs based on whether you are on the remote connection or not.
 
 ls = lists files
 
