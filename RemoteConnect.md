@@ -9,8 +9,12 @@ It will look something like this:
 
 cs15lwi22zz@ieng6.ucsd.edu
 
-The first 5 characters will be the same as the example above, along with everything including and after the @. Copy that, as it will be important for logging in remotely.
+The first 5 characters will be the same as the example above, along with everything including and after the @. Before you do anything, you'll have to change your password for that remote account. Do so, then wait approximately 15 minutes for the change to go through. After, copy the address, as it will be important for logging in remotely.
 
-After that's done, open up Visual Studio and a terminal, then type the command
+Now that that's done, open up a terminal in Visual Studio, then type the command:
 
-*ssh (your remote account from above)* 
+*ssh (your remote account from above)*
+
+When doing this for the first time, a message will pop up asking you if you are sure you wish to connect. Type yes and hit enter. You'll immediately be prompted to enter your password. Do so, but know that it will not show you inputting your password, so you'll have to enter it blindly for the purposes of security.
+
+Once that's all done, you should get a message that you've connected and you are done with this step! From here you can input ctrl + D or enter quit to quit from the remote host. [Next, it's time to learn some commands!](Commands.md)
