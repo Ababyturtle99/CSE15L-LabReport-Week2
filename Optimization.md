@@ -11,7 +11,7 @@ What this does is create a pair of keys, a public and a private. It will ask you
 
 ![SSHkeygen](https://i.ibb.co/6JW7wgv/SSH-Keygen.png)
 
-Once you're past this, you'll want to use the scp command to copy the public key over onto the remote host. Doing this will then allow you to log in on that computer without needing to log in every time.
+For Windows users, there will be a bit more you have to do, as well detailed [here](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_keymanagement#user-key-generation). Once you're past this, you'll want to use the scp command to copy the public key over onto the remote host. Doing this will then allow you to log in on that computer without needing to log in every time.
 
 # Optimize Running Commands
 
