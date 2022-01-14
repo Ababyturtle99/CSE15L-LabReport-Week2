@@ -5,9 +5,13 @@ Here I will show some ways to help optimize running commands, including setting 
 
 # SSH Keys
 
-Creating and using an SSH key properly can help you run commands faster by not requiring you to put in your password every time you wish to log in on the computer which you created the key on. 
+Creating and using an SSH key properly can help you run commands faster by not requiring you to put in your password every time you wish to log in on the computer which you created the key on. To start, you'll want to enter *ssh-keygen*
+
+What this does is create a pair of keys, a public and a private. It will ask you where you would like to save the key. Enter in the directory where you wish to save it. You will be prompted to enter your password, and doing so will bring up a result simiilar to this:
 
 ![SSHkeygen](https://i.ibb.co/6JW7wgv/SSH-Keygen.png)
+
+Once you're past this, you'll want to use the scp command to copy the public key over onto the remote host. Doing this will then allow you to log in on that computer without needing to log in every time.
 
 # Optimize Running Commands
 
@@ -22,3 +26,5 @@ Another way to help optimize running commands is by running multiple commands wi
 *cp program.java; javac program.java; java program*
 
 Finally, there's one last time saving tip. When in the terminal, you can press the up and down arrows to move between any of the commands that you have previously entered. This can allow you to re run commands after any changes to the code, or not have to retype a full command to change one part of it.
+
+[Return to the Table Of Contents](index.md)

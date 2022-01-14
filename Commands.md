@@ -27,6 +27,12 @@ You can do this how you would normally do so, such as running javac file.java th
 
 # Copying Files Over
 
-When connected to the remote server, you may copy files over onto it by using the scp command above. Doing so will allow you to run these commands on the remote server.
+When connected to the remote server, you may copy files over onto it by using the scp command above. Doing so will allow you to run these commands on the remote server. Doing so is as simple as this command.
+
+*scp (file)*
 
 ![CopyFiles](https://i.ibb.co/7b9mgsz/Copying-files.png)
+
+Now your file is on the remote host! From here, you can put whatever files you want, run them, or you can [Learn about how to optimize your commands](Optimization.md).
+
+[Return to the Table Of Contents](index.md)

@@ -22,4 +22,6 @@ Once that's all done, you should get a message that you've connected and you are
 
 ![RemoteConnection](https://i.ibb.co/9NkGRbg/Remote-Connect.png)
 
-From here you can input ctrl + D or enter quit to quit from the remote host. [Next, it's time to learn some commands!](Commands.md)
+From here you can input ctrl + D or enter quit to quit from the remote host. [Next, it's time to learn some commands!](Commands.md).
+
+[Return to the Table Of Contents](index.md)
