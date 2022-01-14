@@ -3,15 +3,23 @@
 
 This section will cover 3 things, trying new commands, copying files over, and setting an SSH key.
 
+# A Few Basic Commands
 
-ls
-pwd
-mkdir
-cp
-cd ~
-cd
-ls -lat
-ls -a
-ls <directory> where <directory> is /home/linux/ieng6/cs15lwi22/cs15lwi22abc, where the abc is one of the other group members’ username
-cp /home/linux/ieng6/cs15lwi22/public/hello.txt ~/
-cat /home/linux/ieng6/cs15lwi22/public/hello.txt
+Feel free to mess around and use these commands yourself to try to get familiar with them!
+
+ls = lists files
+
+pwd = shows the directory of the current file
+
+mkdir (folder name) = make a new folder in that directory
+
+cp (File) = copy a file over
+
+cd (directory) = change directory to the directory provided in the argument
+cd ~ = ~ is short for home in this case, and will take you to the home folder
+
+It's possible to also run commands while connected to the server, although the files must be on the remote server.
+You can do this how you would normally do so, such as running javac file.java then java file
+
+# Copying Files Over
+
