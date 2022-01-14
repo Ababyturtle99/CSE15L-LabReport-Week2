@@ -1,4 +1,4 @@
-# Installing Visual Studio Code:
+# Installing Visual Studio Code
 
 First, You'll want to download the installer from Visual Studio Code's website.
 
@@ -6,7 +6,7 @@ Be sure to install the one for your specific operating system!
 
 ![VSCWebsite](https://i.ibb.co/Hh0rMfh/VSCImage.png)
 
-After you've done that and the installer is downloaded, run the installer and change the settings to what you wish, 
+After you've done that and the installer is downloaded, run the installer and change the settings to what you wish,
 such as install location, and have it launch when it finishes.
 
 You'll want to go to the 5th tab down on the left side to install add ons to work with the programming languages you choose.
