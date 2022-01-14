@@ -18,4 +18,8 @@ Now that that's done, open up a terminal in Visual Studio, then type the command
 
 When doing this for the first time, a message will pop up asking you if you are sure you wish to connect. Type yes and hit enter. You'll immediately be prompted to enter your password. Do so, but know that it will not show you inputting your password, so you'll have to enter it blindly for the purposes of security.
 
-Once that's all done, you should get a message that you've connected and you are done with this step! From here you can input ctrl + D or enter quit to quit from the remote host. [Next, it's time to learn some commands!](Commands.md)
+Once that's all done, you should get a message that you've connected and you are done with this step! It should look something like this:
+
+![RemoteConnection](https://i.ibb.co/9NkGRbg/Remote-Connect.png)
+
+From here you can input ctrl + D or enter quit to quit from the remote host. [Next, it's time to learn some commands!](Commands.md)

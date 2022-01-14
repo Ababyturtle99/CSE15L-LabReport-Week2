@@ -6,6 +6,6 @@ Hello! Here I will go over some important details regarding remote access that a
 
 [Remotely Connecting](RemoteConnect.md)
 
-[Commands, moving files, and setting an SSH key](Commands.md)
+[Commands, and copying files](Commands.md)
 
-[Optimizing Remote Running](Optimization.md)
+[Setting an SSH Key and Optimizing Remote Running](Optimization.md)

@@ -18,9 +18,15 @@ cp (File) = copy a file over
 cd (directory) = change directory to the directory provided in the argument
 cd ~ = ~ is short for home in this case, and will take you to the home folder
 
+dir = shows the available directories
+
+![dirCommand](https://i.ibb.co/kxCB9qh/Commands.png)
+
 It's possible to also run commands while connected to the server, although the files must be on the remote server.
 You can do this how you would normally do so, such as running javac file.java then java file
 
 # Copying Files Over
 
 When connected to the remote server, you may copy files over onto it by using the scp command above. Doing so will allow you to run these commands on the remote server.
+
+![CopyFiles](https://i.ibb.co/7b9mgsz/Copying-files.png)
