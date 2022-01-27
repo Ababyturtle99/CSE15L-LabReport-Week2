@@ -1,11 +1,6 @@
-# Table Of Contents
+# Index
 
-Hello! Here I will go over some important details regarding remote access that are needed for this class! You can use the links to go to each individual section!
+Hello! Here I will go over some important details regarding remote access that are needed for this class! 
 
-[Installing VSCode](InstallVSC.md)
+[Tutorial here!](InstallVSC.md)
 
-[Remotely Connecting](RemoteConnect.md)
-
-[Commands, and copying files](Commands.md)
-
-[Setting an SSH Key and Optimizing Remote Running](Optimization.md)
