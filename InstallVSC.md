@@ -1,6 +1,6 @@
 # Installing Visual Studio Code
 
-First, You'll want to download the installer from Visual Studio Code's website.
+First, You'll want to download the installer from [Visual Studio Code's website](https://code.visualstudio.com/download).
 
 Be sure to install the one for your specific operating system!
 
