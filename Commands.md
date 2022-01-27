@@ -7,18 +7,18 @@ This section will cover 2 things, trying new commands, and copying files over.
 
 Feel free to mess around and use these commands yourself to try to get familiar with them! Notice how they will show different outputs based on whether you are on the remote connection or not.
 
-ls = lists files
+```ls = lists files
 
-pwd = shows the directory of the current file
+```pwd = shows the directory of the current file
 
-mkdir (folder name) = make a new folder in that directory
+```mkdir (folder name) = make a new folder in that directory
 
-cp (File) = copy a file over
+```cp (File) = copy a file over
 
-cd (directory) = change directory to the directory provided in the argument
-cd ~ = ~ is short for home in this case, and will take you to the home folder
+```cd (directory) = change directory to the directory provided in the argument
+```cd ~ = ~ is short for home in this case, and will take you to the home folder
 
-dir = shows the available directories
+```dir = shows the available directories
 
 ![dirCommand](https://i.ibb.co/kxCB9qh/Commands.png)
 
@@ -29,7 +29,7 @@ You can do this how you would normally do so, such as running javac file.java th
 
 When connected to the remote server, you may copy files over onto it by using the scp command above. Doing so will allow you to run these commands on the remote server. Doing so is as simple as this command.
 
-*scp (file)*
+```*scp (file)*
 
 ![CopyFiles](https://i.ibb.co/7b9mgsz/Copying-files.png)
 

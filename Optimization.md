@@ -23,7 +23,7 @@ Make sure to put the command you want to run in quotes!
 
 Another way to help optimize running commands is by running multiple commands within the same line, which can be done by separating each command with semicolons. For example, this allows you to use javac and java to compile all files and run it in one line. You can copy over files and run them in one line, just like this! 
 
-*cp program.java; javac program.java; java program*
+```*cp program.java; javac program.java; java program*
 
 Finally, there's one last time saving tip. When in the terminal, you can press the up and down arrows to move between any of the commands that you have previously entered. This can allow you to re run commands after any changes to the code, or not have to retype a full command to change one part of it.
 

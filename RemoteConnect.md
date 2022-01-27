@@ -14,7 +14,7 @@ The first 5 characters will be the same as the example above, along with everyth
 
 Now that that's done, open up a terminal in Visual Studio, then type the command:
 
-*ssh (your remote account from above)*
+```*ssh (your remote account from above)*
 
 When doing this for the first time, a message will pop up asking you if you are sure you wish to connect. Type yes and hit enter. You'll immediately be prompted to enter your password. Do so, but know that it will not show you inputting your password, so you'll have to enter it blindly for the purposes of security.
 
