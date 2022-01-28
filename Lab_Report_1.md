@@ -105,7 +105,7 @@ Another way to help optimize running commands is by running multiple commands wi
 
 ```*cp program.java; javac program.java; java program*
 
-![multiple commands](https://ibb.co/WVfSTWM)
+![multiple commands](https://i.ibb.co/8Y9FhDf/important-picture-for-lab1.png)
 
 Finally, there's one last time saving tip. When in the terminal, you can press the up and down arrows to move between any of the commands that you have previously entered. This can allow you to re run commands after any changes to the code, or not have to retype a full command to change one part of it.
 

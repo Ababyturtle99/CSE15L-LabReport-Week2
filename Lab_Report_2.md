@@ -1,27 +1,34 @@
 
-# Connecting Remotely
+# Lab Report 2: Debugging and Testing
 
-In this class you will need to connect to a remote computer on campus. Here is where I will show you how to do this.
+During the lab, there were 3 main bugs that my group had seen and fixed. The files that caused the symptoms to surface are the ones below.
 
-First you will need to install OpenSSH, which a good tutorial can be found [here](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse).
+![FailFiles](https://i.ibb.co/TPws7NB/files-that-made-it-fail.png)
 
-After this, you will need to get your specific CSE15L remote account from this site [here](https://sdacs.ucsd.edu/~icc/index.php).
-It will look something like this: 
+When these files are the input for running Markdownparse.java, these are the results.
 
-cs15lwi22zz@ieng6.ucsd.edu
+![FailedRuns](https://i.ibb.co/y8MtBgj/failed-tests.png)
 
-The first 5 characters will be the same as the example above, along with everything including and after the @. Before you do anything, you'll have to change your password for that remote account. Do so, then wait approximately 15 minutes for the change to go through. After, copy the address, as it will be important for logging in remotely.
+Case 1:
 
-Now that that's done, open up a terminal in Visual Studio, then type the command:
+FailFile.md contains image embeds, which should NOT be seen as links, but the program originally copies anything that is within parenthesis after a set of brackets. Image embeds follow the exact format of links, but have a '!' at the front. So, the program does not see the difference between the two as it only checks for the brackets and parenthesis, copying the image embed and printing it as our symptom.
 
-```*ssh (your remote account from above)*
 
-When doing this for the first time, a message will pop up asking you if you are sure you wish to connect. Type yes and hit enter. You'll immediately be prompted to enter your password. Do so, but know that it will not show you inputting your password, so you'll have to enter it blindly for the purposes of security.
+Case 2: 
 
-Once that's all done, you should get a message that you've connected and you are done with this step! It should look something like this:
+FailFile2.md contains no links, but does contain a pair of brackets and a pair of parenthesis that exist a far distance away. The program does not check whether the link is a properly formatted link, once again only looking to see if there are parenthesis followed by brackets, copying what is inside the parenthesis, which may not even be an imbed, such as in the file, and printing a non link.
 
-![RemoteConnection](https://i.ibb.co/9NkGRbg/Remote-Connect.png)
 
-From here you can input ctrl + D or enter quit to quit from the remote host. [Next, it's time to learn some commands!](Commands.md).
+Case 3:
 
-[Return to the Table Of Contents](index.md)
+FailFile3 has two links, except one of them does not have their open or closed parenthesis. Since this exact problem also occurs with brackets, I will write as if it's one problem, since it nearly is. Our bug is that when a bracket/parenthesis is not found, the .indexOf function returns -1, and the program still acts as if it found it, which can cause one of two symptoms. For one, the program may infinitely loop if it fails to find anything other than the closed parenthesis, as it returns the -1 to start the next search from. However, it will cause an index out of bounds exception if the last close parenthesis cannot be found, as it will attempt to create a substring with a -1 stopping point.  
+
+Thus, the solutions are presented below in the following picture and explained in words below the picture.
+
+![CodeChanges](https://i.ibb.co/CK7CcS8/correction-to-code.png)
+
+Case 1: For every set of brackets the program finds, it checks if the opening bracket is the start, or if the character before isn't an '!' before continuing. The firt check avoids another issue, an index out of bounds exception in the case that the link is the start of the file, and thus the first opening bracket is index 0.
+
+Case 2: For this, before we make and add the link to the list, we check if the link was actually an embedded link by checking if the closed bracket and open parenthesis are right next to each other, and if they are, the link will be copied into the list.  
+
+Case 3: To fix this issue, we simply add checks after finding each set of brackets and parenthesis, breaking out of the loop if it fails to find any of them, as the file will have no more links if either bracket or parenthesis cannot be found.
