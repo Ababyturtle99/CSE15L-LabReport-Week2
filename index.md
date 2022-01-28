@@ -1,6 +1,7 @@
 # Index
 
-Hello! Here I will go over some important details regarding remote access that are needed for this class! 
+Hello! Here I will contain all of my labs throughout the year on this one github pages site. 
 
-[Tutorial here!](InstallVSC.md)
+[Tutorial/Lab 1 here!](Lab_Report_1.md)
 
+[Lab Report 2](Lab_Report_2.md)
