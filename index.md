@@ -1,4 +1,4 @@
-# Index
+# Table of Contents
 
 Hello! Here I will contain all of my labs throughout the year on this one github pages site. 
 
