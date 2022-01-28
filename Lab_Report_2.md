@@ -25,7 +25,7 @@ FailFile3 has two links, except one of them does not have their open or closed p
 
 Thus, the solutions are presented below in the following picture and explained in words below the picture.
 
-![CodeChanges](https://i.ibb.co/CK7CcS8/correction-to-code.png)
+![CodeChanges](https://i.ibb.co/F3RbRHP/correction-to-code.png)
 
 Case 1: For every set of brackets the program finds, it checks if the opening bracket is the start, or if the character before isn't an '!' before continuing. The firt check avoids another issue, an index out of bounds exception in the case that the link is the start of the file, and thus the first opening bracket is index 0.
 
