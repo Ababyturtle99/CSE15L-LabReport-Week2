@@ -32,3 +32,5 @@ Case 1: For every set of brackets the program finds, it checks if the opening br
 Case 2: For this, before we make and add the link to the list, we check if the link was actually an embedded link by checking if the closed bracket and open parenthesis are right next to each other, and if they are, the link will be copied into the list.  
 
 Case 3: To fix this issue, we simply add checks after finding each set of brackets and parenthesis, breaking out of the loop if it fails to find any of them, as the file will have no more links if either bracket or parenthesis cannot be found.
+
+[Back to the table of contents!](index.md)
