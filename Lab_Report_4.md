@@ -4,7 +4,7 @@ For our expected, according to the previews, these are the only links that shoul
 
 Test 1:
 
-'google.com
+`google.com
 
 google.com
 
